@@ -38,10 +38,10 @@ public class EmpresaServiceImpl implements EmpresaService
 	}
 
 	/**
-	 * {@link EmpresaService#pesistir(Empresa)}
+	 * {@link EmpresaService#persistir(Empresa)}
 	 */
 	@Override
-	public Empresa pesistir(Empresa empresa)
+	public Empresa persistir(Empresa empresa)
 	{
 		log.info("Persistindo empresa {}", empresa);
 		return this.empresaRepository.save(empresa);

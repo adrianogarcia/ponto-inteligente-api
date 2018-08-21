@@ -57,7 +57,7 @@ public class Funcionario implements Serializable
 	 * @return the id
 	 */
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)	
 	public Long getId()
 	{
 		return id;
@@ -166,7 +166,7 @@ public class Funcionario implements Serializable
 	/**
 	 * @return the qtdHorasTrabalhoDia
 	 */
-	@Column( name = "qtd_hora_trabalhada_dia", nullable = true)
+	@Column( name = "qtd_horas_trabalho_dia", nullable = true)
 	public Float getQtdHorasTrabalhoDia()
 	{
 		return qtdHorasTrabalhoDia;

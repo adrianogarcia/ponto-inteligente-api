@@ -23,7 +23,7 @@ public interface EmpresaService
 	 * @param empresa
 	 * @return Empresa
 	 */
-	Empresa pesistir(Empresa empresa);
+	Empresa persistir(Empresa empresa);
 	
 	
 	
