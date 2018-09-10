@@ -20,11 +20,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 import br.com.memory.pontointeligente.api.entities.Empresa;
 import br.com.memory.pontointeligente.api.entities.Funcionario;
 import br.com.memory.pontointeligente.api.entities.Lancamento;
-import br.com.memory.pontointeligente.api.enums.PerfilEnum;
 import br.com.memory.pontointeligente.api.enums.TipoEnum;
 import br.com.memory.pontointeligente.api.repository.EmpresaRepository;
 import br.com.memory.pontointeligente.api.repository.FuncionarioRepository;
 import br.com.memory.pontointeligente.api.repository.LancamentoRepository;
+import br.com.memory.pontointeligente.api.security.PerfilEnum;
 import br.com.memory.pontointeligente.api.utils.PasswordUtils;
 
 @RunWith(SpringRunner.class)

@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.memory.pontointeligente.api.dtos.CadastroPJDto;
 import br.com.memory.pontointeligente.api.entities.Empresa;
 import br.com.memory.pontointeligente.api.entities.Funcionario;
-import br.com.memory.pontointeligente.api.enums.PerfilEnum;
 import br.com.memory.pontointeligente.api.response.Response;
+import br.com.memory.pontointeligente.api.security.PerfilEnum;
 import br.com.memory.pontointeligente.api.services.EmpresaService;
 import br.com.memory.pontointeligente.api.services.FuncionarioService;
 import br.com.memory.pontointeligente.api.utils.PasswordUtils;
@@ -113,7 +113,7 @@ public class CadastroPJController
 	 * @return
 	 * @throws NoSuchAlgorithmException
 	 */
-	private Funcionario converterDtoParaFuncionario(@Valid CadastroPJDto cadastroPJDto, BindingResult result)
+	private Funcionario converterDtoParaFuncionario(CadastroPJDto cadastroPJDto, BindingResult result)
 		throws NoSuchAlgorithmException
 	{
 
